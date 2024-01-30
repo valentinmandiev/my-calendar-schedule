@@ -1,7 +1,4 @@
-// globals.css
-
 import './globals.css';
-import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -16,10 +13,10 @@ export default function RootLayout({children}){
     <>
       <html lang="en">
         <head>
-          {/* Include your metadata and other head elements here */}
-          <title>{metadata.title}</title>
+          <title>My calendar</title>
+          <link rel="icon" href="/favicon.ico" />
+
           <meta name="description" content={metadata.description} />
-          {/* Other head elements */}
           <style>{inter.styles}</style>
         </head>
         <body className={inter.className}>{children}</body>
